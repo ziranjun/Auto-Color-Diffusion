@@ -1,0 +1,32 @@
+NOTICE
+
+Portions of this project were developed with the assistance of AI coding
+tools (including DeepSeek via the VS Code extension). All such content has
+been manually reviewed and modified by the author.
+
+The remainder of this project is original work of the author.
+
+This project is licensed under the terms set out in the LICENSE file
+("Copyright and Permission Notice", Version 1.0.0): anyone may use, modify,
+embed and redistribute it — including for paid work and inside commercial
+products — but the Software itself may not be sold or redistributed as a
+product, and authorship must be preserved.
+
+The LICENSE file is the authoritative text and must be kept together with
+every copy or substantial portion of the Software.
+
+Copyright (c) 2026 ZIRAN
+
+------------------------------------------------------------------------------
+Bundled third-party component: ExifTool
+------------------------------------------------------------------------------
+Release builds of this application bundle ExifTool by Phil Harvey
+(https://exiftool.org), version as reported by `exiftool -ver` at build time.
+
+  Copyright (c) 2003-2026 Phil Harvey
+  License: GNU General Public License v1.0 or later / Perl Artistic License
+  License text: <app>\_internal\exiftool_files\LICENSE
+
+ExifTool is an independent program invoked by this application as a separate
+process; it is not linked into it. If you redistribute this package, keep the
+exiftool_files folder (including its LICENSE) together with exiftool.exe.
