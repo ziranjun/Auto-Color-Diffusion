@@ -1,0 +1,46 @@
+{
+  "name": "default_neutral",
+  "version": {
+    "structure": 1,
+    "generator": "1.0.0"
+  },
+  "created_at": "2026-09-19T00:00:00+08:00",
+  "sample_count": 0,
+  "param_ranges": {},
+  "text_rules": [
+    "这是一个内置的中性基准风格，不引入任何个人偏好：目标是让一批照片看起来属于同一组，而不是追求某张单张的最佳效果。",
+    "曝光：只做统一化处理，单张改动幅度不超过 ±0.5 EV；如果某张与批内中位数差距很大，优先怀疑它是特例而不是整体跑偏。",
+    "白平衡：仅在画面明显偏色时微调，且倾向保守（色温改动不超过 ±300K）；不要在日光与夜景之间强行拉齐色温。",
+    "对比度与影调：对比度、高光、阴影、白色、黑色的改动均不超过 ±20；优先用阴影/高光恢复层次，而不是用对比度制造冲击。",
+    "饱和度：默认使用自然饱和度（Vibrance）而不是饱和度（Saturation），因为 Saturation 会让肤色过饱和；两者改动均不超过 ±20。",
+    "HSL 分区：不做分区色相偏移（HueAdjustment* 保持 0）。若某类颜色明显失衡，宁可整体微调白平衡，也不要用 HSL 做风格化偏移。",
+    "颜色分级与分离色调：全部保持 0，不引入任何染色倾向。",
+    "曲线：保持线性（ToneCurveName2012 为 Linear）。不要用点曲线制造 S 型影调——曲线的批次一致性很难控制。",
+    "细节：锐化与降噪保持原片设置不动。批量统一锐化没有意义，因为不同 ISO 与不同镜头的合理锐化量本就不同。",
+    "镜头校正：保持原片设置，不启用或不关闭配置文件校正，不改变暗角与畸变参数。",
+    "相机配置文件：绝不修改。它依赖本机安装的配置文件，换机器可能失效并导致色彩突变。",
+    "人像场景：如画面以人为主，宁可整体略欠饱和也不要过饱和；肤色过饱和是最难在后期挽回的错误。",
+    "高光保护：若画面中有大面积高光（天空、白衣服、反光面），优先压低高光而不是压低整体曝光。"
+  ],
+  "ignore_fields": [],
+  "style_summary": "内置的中性基准风格。不引入任何创作倾向，只做保守的全局一致性校正，把一组照片调到视觉统一。这是用户在未选择风格且未填写提示词时的默认回退风格。",
+  "saturation_tendency": "偏保守",
+  "contrast_tendency": "中性",
+  "shadow_color_cast": "中性",
+  "hsl_habits": "不做 HSL 分区调整，保持 0。",
+  "lens_correction_preference": "保持原片设置，不做任何镜头校正取舍。",
+  "excluded_reasoning": "本风格为手工编写的中性基准，未基于任何用户样本，因此 ignore_fields 为空，param_ranges 为空。",
+  "mask_usage": {
+    "samples_total": 0,
+    "samples_with_masks": 0,
+    "mask_usage_ratio": 0.0,
+    "total_corrections": 0,
+    "corrections_per_sample": 0.0,
+    "total_masks": 0,
+    "total_retouch_areas": 0,
+    "manual_count": 0,
+    "subject_count": 0,
+    "object_count": 0,
+    "local_field_means": {}
+  }
+}

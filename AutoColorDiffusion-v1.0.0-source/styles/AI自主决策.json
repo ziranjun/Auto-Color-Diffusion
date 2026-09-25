@@ -1,0 +1,38 @@
+{
+  "name": "AI自主决策",
+  "version": {
+    "structure": 1,
+    "generator": "1.0.0"
+  },
+  "created_at": "2026-09-22T00:00:00+08:00",
+  "sample_count": 0,
+  "param_ranges": {},
+  "text_rules": [],
+  "ignore_fields": [],
+  "style_summary": "程序内置的自主决策风格：不预设任何个人偏好，由模型按每一张照片本身的判断决定调整方向与幅度。这是唯一一个「没有风格规则」的选项——它的含义不是「不受约束」，而是「审美方向不受既有风格约束」。",
+  "saturation_tendency": "",
+  "contrast_tendency": "",
+  "shadow_color_cast": "",
+  "hsl_habits": "",
+  "lens_correction_preference": "",
+  "excluded_reasoning": "本风格为程序内置、手工编写，未基于任何用户样本：param_ranges 与 text_rules 均为空是**有意为之**（自主决策模式不应携带任何偏好规则）。提示词由 constants.AUTOPILOT_PROMPT 与 prompts.render_style_block 的专门分支提供，不从这个文件的 text_rules 读取——这样改文案时只有一处真值来源。",
+  "mask_usage": {
+    "samples_total": 0,
+    "samples_with_masks": 0,
+    "mask_usage_ratio": 0.0,
+    "total_corrections": 0,
+    "corrections_per_sample": 0.0,
+    "total_masks": 0,
+    "total_retouch_areas": 0,
+    "manual_count": 0,
+    "subject_count": 0,
+    "object_count": 0,
+    "local_field_means": {}
+  },
+  "_builtin": {
+    "purpose": "AI自主决策",
+    "deletable": false,
+    "debug_only": false,
+    "note": "程序启动时会用 ensure_seed_styles() 把它补齐（删掉也会自动恢复），所以界面里不提供删除。它与 default_neutral 的区别：default_neutral 是「中性回退」（仅离线调试可选），本风格是给日常使用的功能（任何时候都可以选）。"
+  }
+}
